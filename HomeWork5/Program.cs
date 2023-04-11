@@ -79,56 +79,12 @@
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
 
-// double[] CreateArray(int min, int max, int size)
-// {
-//     double[] array = new double[size];
-//     for (int i = 0; i < size; i++)
-//         array[i] = new Random().Next(min, max);
-//     return array;
-// }
-
-// void ShowArray(double[] array)
-// {
-//     for (int i = 0; i < array.Length; i += 1)
-//         Console.Write(array[i] + " ");
-//     Console.WriteLine();
-// }
-
-// double DifferenceMaxMin(double[] newArray)
-// {
-//     double max = newArray[0];
-//     double min = newArray[0];
-//     for (int i = 1; i < newArray.Length; i++)
-//     {
-//         if (newArray[i] > max)
-//             max = newArray[i];
-//         if (newArray[i] < min)
-//             min = newArray[i];
-//     }
-//     double result = max - min;
-//     return result;
-
-// }
-
-
-// Console.Write("Введите минимальное значение для генерации элементов массива: ");
-// int min = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите максимально значение для генерации элементов массива: ");
-// int max = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите размер генерируемого массива: ");
-// int size = Convert.ToInt32(Console.ReadLine());
-
-// double[] myArray = CreateArray(min, max, size);
-// Console.Write("Сгенерированный массив: ");
-// ShowArray(myArray);
-// Console.Write($"Разница между максимальным и минимальным значением {Math.Round(DifferenceMaxMin(myArray), 2)}");
-
 
 double[] CreateArray(int size)
 {
     double[] array = new double[size];
     for (int i = 0; i < size; i++)
-        array[i] = new Random().Next(10, 100);
+        array[i] = new Random().Next(1, 100); // в условиях этого нет, но я решила ограничить ввод чисел до 100
     return array;
 }
 
@@ -155,8 +111,7 @@ double DifferenceMaxMin(double[] newArray)
 
 }
 
-
-Console.Write("Введите размер генерируемого массива: ");
+Console.Write("Введите размер массива: ");
 int size = Convert.ToInt32(Console.ReadLine());
 
 double[] myArray = CreateArray(size);
