@@ -30,39 +30,39 @@
 // M = 4; N = 8. -> 30
 
 
-void SumFromMToN(int m, int n)
-{
-    Console.Write(SumOfMAndN(m - 1, n));
-}
+// void SumFromMToN(int m, int n)
+// {
+//     Console.Write(SumOfMAndN(m - 1, n));
+// }
 
-int SumOfMAndN(int m, int n)
-{
-    int result = m;
-     if (m == n)
-        return 0;
+// int SumOfMAndN(int m, int n)
+// {
+//     int result = m;
+//      if (m == n)
+//         return 0;
 
-    else if (m > n)
-     {
-        Console.WriteLine("Ошибка ввода. Значение M должно быть меньше значения N");
-     return 0;
-     }
+//     else if (m > n)
+//      {
+//         Console.WriteLine("Ошибка ввода. Значение M должно быть меньше значения N");
+//      return 0;
+//      }
 
-    else
-    {
-        m++;
-        result = m + SumOfMAndN(m, n);
-        return result;
-    }
-}
+//     else
+//     {
+//         m++;
+//         result = m + SumOfMAndN(m, n);
+//         return result;
+//     }
+// }
 
 
-Console.Write("Введите число M: ");
-int m = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число M: ");
+// int m = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите число N: ");
-int n = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число N: ");
+// int n = Convert.ToInt32(Console.ReadLine());
 
-SumFromMToN(m, n);
+// SumFromMToN(m, n);
 
 
 
